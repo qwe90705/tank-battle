@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>坦克大战 · Tank Battle</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="wrap">
+  <div class="game-frame">
+    <canvas id="game" width="512" height="416"></canvas>
+    <div id="flash" class="flash"></div>
+  </div>
+  <div class="legend">
+    <h1>坦克大战</h1>
+    <p class="sub">TANK BATTLE · 闯关模式</p>
+    <div class="hud-cols">
+      <div>
+        <h2>操作</h2>
+        <ul class="keys">
+          <li><b>↑ ↓ ← → / WASD</b> 移动</li>
+          <li><b>空格</b> 射击</li>
+          <li><b>P</b> 暂停</li>
+          <li><b>Enter</b> 开始 / 继续</li>
+        </ul>
+      </div>
+      <div>
+        <h2>道具</h2>
+        <ul class="keys">
+          <li><b>★</b> 火力 +1</li>
+          <li><b>✚</b> 生命 +1</li>
+          <li><b>盾</b> 无敌护盾</li>
+          <li><b>💣</b> 消灭场上敌人</li>
+          <li><b>⏱</b> 冻结敌人</li>
+        </ul>
+      </div>
+    </div>
+    <p class="tip">自动存档最高分 · 建议使用键盘游玩</p>
+  </div>
+</div>
+<script src="js/levels.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/sprites.js"></script>
+<script src="js/entities.js"></script>
+<script src="js/game.js"></script>
+</body>
+</html>

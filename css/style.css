@@ -1,0 +1,108 @@
+:root {
+  --bg: #1b1f24;
+  --panel: #242a32;
+  --text: #d8dee7;
+  --muted: #8b95a3;
+  --accent: #ffd23f;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(1200px 700px at 20% -10%, #27303c, var(--bg) 60%);
+  color: var(--text);
+  font-family: "Microsoft YaHei", "PingFang SC", system-ui, sans-serif;
+  min-height: 100vh;
+}
+
+.wrap {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px 16px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.game-frame {
+  position: relative;
+  width: 512px;
+  max-width: 100%;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.55), 0 0 0 1px rgba(255, 255, 255, 0.06);
+  background: #000;
+}
+
+#game {
+  display: block;
+  width: 100%;
+  height: auto;
+  image-rendering: pixelated;
+  background: #0d0f12;
+  touch-action: none;
+}
+
+.legend {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.legend h1 {
+  margin: 0;
+  font-size: 28px;
+  letter-spacing: 4px;
+  color: var(--accent);
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.5);
+}
+
+.legend .sub {
+  margin: 0 0 12px;
+  color: var(--muted);
+  letter-spacing: 2px;
+  font-size: 13px;
+}
+
+.hud-cols {
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hud-cols h2 {
+  margin: 0 0 6px;
+  font-size: 14px;
+  color: var(--accent);
+  border-bottom: 1px solid rgba(255, 210, 63, 0.25);
+  padding-bottom: 4px;
+}
+
+.keys {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: var(--text);
+  font-size: 13px;
+  line-height: 1.9;
+  min-width: 170px;
+}
+
+.keys b {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 4px;
+  padding: 0 5px;
+  margin-right: 6px;
+}
+
+.tip {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+}
